@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Shankar Rathod</title>
+
+<style>
+body {font-family: 'Segoe UI', Arial; margin:0; padding:0; background:#f5f7fa;}
+.navbar {
+    background:#0f172a; padding:18px; display:flex; justify-content:center; gap:35px;
+}
+.navbar a {
+    color:#fff; text-decoration:none; font-weight:600; font-size:16px;
+}
+.navbar a:hover {color:#38bdf8;}
+
+.container{width:85%; margin:auto; padding:30px;}
+.section-title {font-size:28px; font-weight:700; color:#0f172a; margin-bottom:15px;}
+.card {
+    background:#ffffff; padding:20px; margin:15px 0;
+    border-radius:10px; box-shadow:0 0 12px rgba(0,0,0,0.08);
+}
+.footer {
+    background:#0f172a; color:white; text-align:center;
+    padding:12px; margin-top:50px; font-size:14px;
+}
+.btn{
+    background:#38bdf8; padding:10px 18px; color:white; text-decoration:none;
+    border-radius:6px; font-weight:600;
+}
+.btn:hover{background:#0284c7;}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+<a href="/">Home</a>
+<a href="/projects/">Projects</a>
+<a href="/skills/">Skills</a>
+<a href="/experience/">Experience</a>
+<a href="/education/">Education</a>
+<a href="/contact/">Contact</a>
+</div>
+
+{% block content %}{% endblock %}
+
+<div class="footer">© 2025 Shankar Rathod | Full-Stack Developer Portfolio</div>
+
+</body>
+</html>

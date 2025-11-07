@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<h2 class="section-title">📬 Contact Me</h2>
+
+<div class="card">
+<form method="POST">{% csrf_token %}
+<input name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:8px">
+<input name="email" type="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:8px">
+<textarea name="message" placeholder="Message" required style="width:100%;padding:10px;margin:8px;height:130px"></textarea>
+<button class="btn" style="width:100%;padding:10px;">Send Message</button>
+</form>
+</div>
+
+</div>
+{% endblock %}
